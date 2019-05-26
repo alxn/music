@@ -9,7 +9,7 @@
 \layout {
   \context {
     \Score
-    \remove "Bar_number_engraver"
+    \omit BarNumber
   }
 }
 
@@ -23,7 +23,7 @@
     \repeat volta 2 {
       f4->\f bes8.-> bes16-> bes4-> f->
       bes8.-> c16-> d8.->_4 c16-> bes2-- \breathe
-      ees4-"simile" ees8. f16 d4_4 bes
+      ees4-"simile" ees8. f16 d4 bes
       c c c2 \breathe
     }
 
