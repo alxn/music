@@ -106,6 +106,7 @@
     f4.\!\mf\>( g8) ees4
     ees2( d4)\!
   }
+  \layout { }
   \midi { }
 }
 \version "2.18.2"  % necessary for upgrading to future LilyPond versions.
