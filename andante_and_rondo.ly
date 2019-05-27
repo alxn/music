@@ -21,7 +21,10 @@
     }
     \tupletSpan 4
     \tupletUp
-
+%{
+    \override TupletBracket.bracket-visibility = #'if-no-beam
+    \override TupletBracket.bracket-visibility = ##f
+%}
     \mark \default % A
     bes4^\markup { \italic "legato" }\p\< d c\!
     bes\> f\! r
@@ -54,25 +57,25 @@
     R2.*1^\markup { \italic "a tempo" }
     \tuplet 3/2 {r8\p\< f g a g f} bes4\!
     ees c\> d
-    \tuplet 3/2 {c8 c\!\<[ a] f c a\! f-- g-- a--}
+    \tuplet 3/2 {c8 \breathe c\!\<[ a] f c a\! f-- g-- a--}
     bes4-- r4 r
     \tuplet 3/2 {r8\p\< c' d e d c} f4\!
     g\> f e
-    \tuplet 3/2 {f8\! a,[ c] f, a c} f4
+    \tuplet 3/2 {f8\! \breathe a,[ c] f, a c} f4
     r4 r g,\<(
     \tuplet 3/2 {c8) ees, g\! c\> ees g} c,4\!
     r4 r f,\<(
     \tuplet 3/2 {bes8) d, f\!\> bes d f} bes,4\!
     R2.
     \tuplet 3/2 {d,8\< f bes d bes f\! g\>( ees) c}
-    f2\! g,4
+    f2\! f,4
     bes r4 r
     \mark \default % D
     ees8\mf\< g bes ees d c\!
     c4\> bes2\!
     bes,8\< d f aes g f\!
     f4\> ees2\!
-    ees16\p \cresc( bes)\! g bes ees8-. ees-. g16( f) ees f
+    ees16\p \cresc( bes)\! g bes ees8-. ees-. g16( f) ees f \breathe
     g( ees) bes ees g8-. g-. bes16( aes) g aes
     bes8 \breathe c16[ d16] ees( d) ees d ees( d) c bes
     a--( bes) c a f4. ees'8
@@ -82,7 +85,7 @@
     aes2.\!
     b2.
     c8( ees) ees4.\f\> d16 c
-    bes g\!\mp\<( fis g) bes g( fis g) a( bes) c d
+    bes \breathe g[\!\mp\<( fis g)] bes g( fis g) a( bes) c d
     ees8. c16 fis8. d16 g4\!\f \breathe
     ees8.\> c16 bes4 a
     g\! r r
@@ -99,12 +102,12 @@
     c4 c,2
     \tuplet 3/2 {f,8\< a c f\!\> a c f( ees) c}
     bes4 bes,2\!
-    \tuplet 3/2 {g'8\cresc( bes\!) bes f( bes) bes ees( bes) bes}
+    \tuplet 3/2 {g'8\cresc( bes\!) bes f( bes) bes ees,( bes') bes}
     \tuplet 3/2 {d, \breathe f bes d( bes) f g( ees) c}
     f2\f\>( f,4)
     bes8 \breathe d\! \mp \< [ f bes d f]
     f4.\!\mf\>( g8) ees4
-    ees2( d4)\!
+    ees2( d4)\!\fermata
   }
   \layout { }
   \midi { }
