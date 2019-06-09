@@ -13,7 +13,7 @@
   }
 }
 
-\score {
+music = {
   \relative {
     \tempo "Alla marcia" 4 = 85
     \numericTimeSignature
@@ -37,6 +37,15 @@
     bes( d) c8. bes16 a4 bes8. c16
     d4--_4 c-- bes2--
   }
+}
+\score {
+  \music
+  \layout { }
+}
+\score {
+  \unfoldRepeats
+  \music
+  \midi { }
 }
 
 \version "2.18.2"
