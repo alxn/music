@@ -13,7 +13,7 @@
 
 \score {
   \relative {
-    \tempo "Andante cantabile" 4 = 63
+    \tempo "Andante cantabile" 4 = 54
     \clef "bass" \key bes \major \time 3/4
     \set Score.markFormatter = #format-mark-box-alphabet
     \compressFullBarRests {
@@ -27,13 +27,13 @@
 %}
     \mark \default % A
     bes4^\markup { \italic "legato" }\p\< d c\!
-    bes\> f\! r
+    bes\> f--\! r
     c'\< ees d8. bes16\!
-    c4\> f,\! r
+    c4\> f,--\! r
     d'8 ees16( f) bes,8-.( bes-. bes-. bes-.)
     a16\<( bes) c d\! es2\>
     d8\! \< ees16( f) ees8.( c16) d8.( bes16) \!
-    d4\>( c)\! r
+    d4\>( c--)\! r
     \mark \default % B
     c4. \< d16 c\! d\>( c) bes a\!
     bes8-- g-- e-- g-- c,4--
@@ -42,7 +42,7 @@
     a8-- f-- c-- a-- f4--
     \breathe
     f'8.\pp\< bes16 bes4.\! a8\>
-    g4.\! e8 f4
+    g4.\! e8 f4--
     \breathe
     f8.\cresc d'16\! d4 c\f
     \breathe
@@ -50,18 +50,18 @@
     bes2.
     \breathe
     a8\mf( bes16 c) f,4 g\>
-    f4 r\! r
+    f4-- r\! r
     R2.*2
     R2.^\markup { \italic "rall." }
     \mark \default % C
     R2.*1^\markup { \italic "a tempo" }
     \tuplet 3/2 {r8\p\< f g a g f} bes4\!
     ees c\> d
-    \tuplet 3/2 {c8 \breathe c\!\<[ a] f c a\! f-- g-- a--}
+    \tuplet 3/2 {c8 c\!\< a f c a\! f-- g-- a--}
     bes4-- r4 r
     \tuplet 3/2 {r8\p\< c' d e d c} f4\!
     g\> f e
-    \tuplet 3/2 {f8\! \breathe a,[ c] f, a c} f4
+    \tuplet 3/2 {f8\! a, c f, a c} f4
     r4 r g,\<(
     \tuplet 3/2 {c8) ees, g\! c\> ees g} c,4\!
     r4 r f,\<(
