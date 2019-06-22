@@ -3,6 +3,7 @@
 \header{
   title = "Star Spangled Banner"
   composer = "John Stafford Smith"
+  tagline = "" % removed lilypond
   arranger = ""
   poet = "Francis Scott Key"
 }
@@ -76,6 +77,7 @@ music = {
 }
 
 \score {
+  \unfoldRepeats
   \music
   \layout { }
 }

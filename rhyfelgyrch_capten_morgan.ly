@@ -3,6 +3,7 @@
 \header{
   title = "Rhyfelgyrch Capten Morgan"
   subtitle = "Captain Morgan's Battle Song"
+  tagline = "" % removed lilypond
   composer = "Welsh traditional"
 }
 
@@ -39,6 +40,7 @@ music = {
   }
 }
 \score {
+  \unfoldRepeats
   \music
   \layout { }
 }
