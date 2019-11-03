@@ -14,7 +14,8 @@
 }
 
 music = {
-  \relative c' {
+  \relative c {
+    \clef "bass"
     \tempo "Maestoso" 4 = 80
     \key ees \major \time 3/4
 
